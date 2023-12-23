@@ -1,5 +1,6 @@
 require "sinatra"
 require 'sass'
+set :server, :puma
 set :public_folder, File.dirname(__FILE__) + '/public'
 
 get '/styles.css' do
