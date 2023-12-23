@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rethink+Sans&display=swap');
+
+body{
+	min-height: 500px!important;
+}
+*{
+	font-family: 'PT Sans', sans-serif;
+}
+
+.title, .subtitle{
+	font-family: 'Rethink Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+#layout{
+
+	background-image: url('/images/main.png');
+	background-size: cover;
+	background-position: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+	height:70vh;
+	width:100vw;
+	@media only screen  and (max-width : 650px){
+		height:100vh;
+	}
+/*	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(225,170,40,1) 82%, rgba(27,5,10,1) 95%);*/
+	.title{
+		color:#FFF;
+	}
+	color:#EEE;
+}
+#welcome .btn{
+	width:100%!important;
+}
+#layout .btn{
+	color:white!important;
+	border:1px solid white!important;
+}
+nav{
+	height:60px;
+	text-align: right;
+  display: flex;
+  flex-direction: column;
+	@media only screen  and (max-width : 650px){
+		text-align:center;
+	}
+}
+nav div{
+  margin-top: auto;
+  margin-right:5px;
+}
+nav .nav-item{
+	margin-right: 15px;
+	color:white;
+	text-decoration: none;
+	font-weight: bolder;
+
+}
+#center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color:white;
+	height:100%;
+}
+
+#layout img{
+		width:50%;
+	}
+
+.btn-custom{
+    position: relative;
+    text-decoration: none;
+    z-index: 9;
+    width: 250px;
+    height: 65px;
+    background: #f5f5f5!important;
+    box-shadow: 0 5px 0 0 #dee9e0;
+    color: #26a713;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 70px;
+    font-size: 14pt;
+    font-weight: 600;
+    border: none;
+    text-shadow: none;
+    border-radius: 7px;
+    padding: 0;
+
+}
+
+.content, #menu{
+	padding:75px;
+	@media only screen  and (max-width : 650px){
+		padding:5px!important;
+	}
+}
+#menu .subtitle{
+	color:#231F20;
+}
+
+.content img{
+	width:100%;
+}
+.center{
+	height:100%;
+	padding:55px;
+	@media only screen  and (max-width : 650px){
+		padding:5px;
+	}
+}
+.mid{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.parentCenter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	img{
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+		border-radius:5px;
+	}
+}
+
+.banquetContainer .banqContent{
+	width:23%!important;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	@media only screen  and (max-width : 650px){
+		width:100%!important;
+		display:block;
+	}
+}
+.banqContent p{
+	font-weight:bolder;
+}
+
+.menu li{
+	text-transform: capitalize!important;
+}
+
+.btn-outline-secondary{
+	border:1px solid #EAAC25!important;
+}
+
+
+#footer{
+	background-color:#231F20;
+	#topFooter{
+
+		img{
+			width:25%;
+			text-align:center;
+			position:relative;
+			top:-45px;
+			@media only screen  and (max-width : 650px){
+				top:-15px;
+				width:55%;
+			}
+		}
+	}
+	#subFooter{
+		padding:25px;
+	}
+	color:white;
+	.subtitle, .alttitle{
+		color: #EAAC25;
+	}
+	a{
+		color:white;
+	}
+}
