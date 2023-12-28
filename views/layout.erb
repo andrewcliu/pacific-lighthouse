@@ -5,22 +5,25 @@
   <meta name="author" content="Andrew Liu">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pacific Lighthouse</title>
+  
   <% if request.path.to_s.include? 'banquet' %>
-
+    <title>Pacific Lighthouse - Banquet Menu</title>
     <meta name="description" content="Discover the perfect event venue in Alameda and Oakland at Pacific Lighthouse. Our expansive space caters to parties and events of all occasions, accommodating over 500 guests. Explore our diverse menu options to create a memorable experience for your guests. Book now for an unforgettable event at Pacific Lighthouse!">
 
   <% elsif request.path.to_s.include? 'food' %>
+    <title>Pacific Lighthouse - Regular Menu</title>
     <meta name="description" content="Indulge in a diverse menu at Pacific Lighthouse, perfect for all palates. Savor authentic Cantonese dishes in a unique setting—one of the few with a full bar and ample space to host parties of any size. Whether it's takeout, an intimate dinner for two, or a lively birthday celebration, Pacific Lighthouse is your ideal destination for exceptional dining experiences.">
 
   <% elsif request.path.to_s.include? 'dim' %>
+    <title>Pacific Lighthouse - Dim Sum</title>
     <meta name="description" content="Indulge in a diverse dim sum menu at Pacific Lighthouse, perfect for all palates. Savor authentic Cantonese dim sum in a unique setting—one of the few with a full bar and ample space to host parties of any size. We serve dim sum to Alameda and greater Oakland from ">
 
   <% elsif request.path.to_s.include? 'contact' %>
+    <title>Pacific Lighthouse - Contact Us</title>
     <meta name="description" content="Contact us for information regarding banquets or parties or if you have any question regarding our services.">
 
   <% else %>
-
+    <title>Pacific Lighthouse</title>
     <meta name="description" content="Indulge in an exquisite dining experience at Pacific Lighthouse, your premier Chinese seafood haven. Delight your taste buds with our delectable dim sum creations, expertly crafted with the finest ingredients. Elevate your evening with a visit to our full cocktail bar, where mixology meets tradition. Immerse yourself in the flavors of the East at Pacific Lighthouse – where Chinese culinary artistry meets contemporary charm. Discover the perfect blend of seafood delights and handcrafted cocktails in a setting that promises an unforgettable gastronomic journey">
 
 
