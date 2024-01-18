@@ -36,10 +36,15 @@ get '/catering' do
 	erb:'catering', layout: :layout
 end
 
+get '/careers' do 
+	erb:'careers', layout: :layout
+end
+
+
 get '/sitemap.xml' do
   content_type 'application/xml'
 	production_url = 'https://www.pacificlighthouse88.com'
-	urls = ['food_menu', 'dim_sum_menu', 'banquet_menu', 'contact', 'catering']
+	urls = ['food_menu', 'dim_sum_menu', 'banquet_menu', 'contact', 'catering','careers']
   builder do |xml|
     xml.instruct! :xml, version: '1.0'
     xml.urlset(xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9') do
