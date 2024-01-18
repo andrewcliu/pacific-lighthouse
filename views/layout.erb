@@ -21,9 +21,11 @@
   <% elsif request.path.to_s.include? 'contact' %>
     <title>Alameda Pacific Lighthouse - Contact Us</title>
     <meta name="description" content="Contact us for information regarding banquets or parties or if you have any question regarding our services.">
-
+  <% elsif request.path.to_s.include? 'catering' %>
+    <title>Alameda Pacific Lighthouse - Catering</title>
+    <meta name="description" content="Contact us for information regarding party trays and catering.">
   <% else %>
-    <title>Alameda Pacific Lighthouse - Seafood Restaurant</title>
+    <title>Alameda Pacific Lighthouse - Dim Sum Restaurant</title>
     <meta name="description" content="Indulge in an exquisite dining experience at Pacific Lighthouse, your premier Chinese seafood haven. Delight your taste buds with our delectable dim sum creations, expertly crafted with the finest ingredients. Elevate your evening with a visit to our full cocktail bar, where mixology meets tradition. Immerse yourself in the flavors of the East at Pacific Lighthouse – where Chinese culinary artistry meets contemporary charm. Discover the perfect blend of seafood delights and handcrafted cocktails in a setting that promises an unforgettable gastronomic journey">
 
 
@@ -45,6 +47,7 @@
         <a href="/dim_sum_menu" class='nav-item'>DIM SUM</a>
         <a href="/food_menu" class='nav-item'>REGULAR DISHES</a>
         <a href="/banquet_menu" class='nav-item'>BANQUET MENU</a>
+        <a href="/catering" class='nav-item'>PARTY TRAYS</a>
         <a href="/contact" class='nav-item'>CONTACT US</a>
       </div>
     </nav>
@@ -62,6 +65,8 @@
         <h1 class="title">DIM SUM MENU</h1>
       <% elsif request.path.to_s.include? 'contact' %>
         <h1 class="title">BUSINESS INFORMATION</h1>
+      <% elsif request.path.to_s.include? 'catering' %>
+        <h1 class="title">CATERING & PARTY TRAYS</h1>
       <% else %>
         <h1 class="title">PACIFIC LIGHTHOUSE</h1>
       <% end %>
@@ -103,7 +108,8 @@
           <h3 class="subtitle">Quick Links</h3>
           <a href="/dim_sum_menu">Dim Sum Menu</a><br>
           <a href="/banquet_menu">Banquet Menu</a><br>
-          <a href="/food_menu">Main Dishes Menu</a>
+          <a href="/food_menu">Main Dishes Menu</a><br>
+          <a href="/catering">Catering & Party Trays</a>
           <br><br>
           <h3 class="subtitle">Reviews</h3>
           <p>
