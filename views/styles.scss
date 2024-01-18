@@ -96,14 +96,18 @@ nav .nav-item{
 	@media only screen  and (max-width : 650px){
 		padding:5px!important;
 	}
+
 }
 #menu .subtitle{
 	color:#231F20;
+	
 }
+
 
 .content img{
 	width:100%;
 }
+
 .center{
 	height:100%;
 	padding:55px;
@@ -145,6 +149,13 @@ nav .nav-item{
 
 .menu li{
 	text-transform: capitalize!important;
+}
+
+#menu{
+	img{
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+		border-radius:5px;
+	}
 }
 
 .btn-outline-secondary{
