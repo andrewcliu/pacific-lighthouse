@@ -13,12 +13,13 @@ get '/styles.css' do
 end
 
 get "/" do
-	redirect to '/index'
-end
-
-get '/index' do 
+	# redirect to '/index'
 	erb:'main', layout: :layout
 end
+
+# get '/index' do 
+# 	erb:'main', layout: :layout
+# end
 
 get '/food_menu' do 
 	erb:'food_menu', layout: :layout
